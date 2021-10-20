@@ -11,14 +11,14 @@ void renderScene()
     glClear(GL_COLOR_BUFFER_BIT);
 
     glColor3f(1.0, 1.0, 1.0);
-    glPointSize(20.0f);
+    glPointSize(50.0f);
 
     glBegin(GL_POINTS);
     glVertex2s( 0, 0); //center point
-    glVertex2s(-1, 0); //left point
-    glVertex2s( 1, 0); //right point
-    glVertex2s( 0,-1); //bottom point
-    glVertex2s( 0, 1); //top point
+    glVertex2s( 1, 1); //topRight point
+    glVertex2s(-1, 1); //topLeft point
+    glVertex2s( 1,-1); //bottomRight point
+    glVertex2s(-1,-1); //bottomLeft point
     glEnd();
 
     glutSwapBuffers();
